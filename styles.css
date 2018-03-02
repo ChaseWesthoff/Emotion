@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arvo';
+    font-size: 16px;
+    padding: 20px 100px 0px 100px;
+    background: #f3f3f3;
+    align-items: center;
+}
+
+/* List */
+
+.grid-container {
+  display: grid;
+  width: 0px;
+  margin-right: auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto ;
+  grid-gap: 5px;
+  padding: 10px;
+  font-size: 40px;
+
+}
+.grid-container > div {
+      margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-size: 5px;
+
+}
+
+
+
+.delete {
+    display: none;
+    display: block;
+}
+
+.submit {
+      text-align: center;
+}
+
+label {
+    width: 4px;
+    align-self: center;
+      margin-right: auto;
+  margin-left: auto;
+}
+
+
+/* Form */
+
+input[type=text] {
+    font-size: 1em;
+      margin-right: auto;
+  margin-left: auto;
+}
+
+button {
+    font-family: 'Helvetica';
+    font-size: 1em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Controls */
+
+.controls {
+      margin-right: auto;
+  margin-left: auto;
+}
+
+.footer {
+
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    color: black;    
+    font-family: helvetica;
+    font-size: 10px;
+    text-align: center;
+}
