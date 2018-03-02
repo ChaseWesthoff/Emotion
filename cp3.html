@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css"/>
+    <title>Emoticon</title>
+  </head>
+  <body>
+
+    <div id="app">
+      <h1>Emoticon Builder</h1>
+
+<div align="center"  class="grid-container">
+<p v-for="item in part">
+     <label v-bind:class="{ completed: item.completed }">{{ item.text }}</label> <br>
+     <br> <button v-on:click="deleteItem(item)" class="delete"></button>
+  </p>
+</div>
+
+<p> Heads </p>
+
+      <form style="display:inline-block;" v-on:submit.prevent="addLeftHead">
+  <button type="submit">(</button>
+      </form>
+
+      <form style="display:inline-block;" v-on:submit.prevent="addRightHead">
+  <button type="submit">)</button>
+      </form>
+<br>
+<br>
+<p> Eyes </p>
+      <form style="display:inline-block;" v-on:submit.prevent="addEyeOne">
+  <button type="submit">-</button>
+      </form>
+
+      <form style="display:inline-block;" v-on:submit.prevent="addEyeTwo">
+  <button type="submit">0</button>
+      </form>
+
+ <form style="display:inline-block;" v-on:submit.prevent="addEyeThree">
+  <button type="submit">&#3232;</button>
+      </form>
+
+      <form style="display:inline-block;" v-on:submit.prevent="addEyeFour">
+  <button type="submit">&#x0CA5;</button>
+      </form>
+
+       <form style="display:inline-block;" v-on:submit.prevent="addEyeFive">
+  <button type="submit">&#x0298;</button>
+      </form>
+
+      <form style="display:inline-block;" v-on:submit.prevent="addEyeSix">
+  <button type="submit">^</button>
+      </form>
+
+<br>
+<br>
+<p> Mouths </p>
+
+      <form style="display:inline-block;" v-on:submit.prevent="addMouthOne">
+  <button type="submit">&#x203F;</button>
+      </form>
+
+      <form style="display:inline-block;" v-on:submit.prevent="addMouthTwo">
+  <button type="submit">&#xFE4F;</button>
+      </form>
+      
+ <form style="display:inline-block;" v-on:submit.prevent="addMouthThree">
+  <button type="submit">&#x0414;</button>
+      </form>
+
+      <form style="display:inline-block;" v-on:submit.prevent="addMouthFour">
+  <button type="submit">3</button>
+      </form>
+
+             <form style="display:inline-block;" v-on:submit.prevent="addMouthFive">
+  <button type="submit">&#x03C9;</button>
+      </form>
+
+      <form style="display:inline-block;" v-on:submit.prevent="addMouthSix">
+  <button type="submit">&#x1D25;</button>
+      </form>
+
+<br>
+<br>
+<p> Arms </p>
+      <form style="display:inline-block;" v-on:submit.prevent="addArmOne">
+  <button type="submit">&#x256F;</button>
+      </form>
+
+      <form style="display:inline-block;" v-on:submit.prevent="addArmTwo">
+  <button type="submit">&#x261E;</button>
+      </form>
+      
+ <form style="display:inline-block;" v-on:submit.prevent="addArmThree">
+  <button type="submit">&#x10DA;</button>
+      </form>
+
+      <form style="display:inline-block;" v-on:submit.prevent="addArmFour">
+  <button type="submit">&#x3065;</button>
+      </form>
+       <form style="display:inline-block;" v-on:submit.prevent="addArmFive">
+  <button type="submit">&#x06F6;</button>
+      </form>
+
+      <form style="display:inline-block;" v-on:submit.prevent="addArmSix">
+  <button type="submit">&#x3006;</button>
+      </form>
+
+<br> <br> <br>
+<p> </p>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="/script.js"></script>
+
+<div class="footer">
+ <footer>  
+
+<p>Click <a href="https://github.com/ChaseWesthoff/Emotion"> here </a> to go to the github for this assignment. </p>
+ </footer>
+
+</div>
+
+  </body>
+</html>
